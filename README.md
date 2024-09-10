@@ -66,5 +66,5 @@ Host localhost
     network_mode = "host"
 ```
 3. Podman
-When running podman on ubuntu Jammy, you may encouter container error with crun. Remove current crun with apt then install latest version on https://github.com/containers/crun
+- When running podman on ubuntu Jammy, you may encouter container error with crun. Remove current crun with apt then install latest version on https://github.com/containers/crun
 ## TODO
