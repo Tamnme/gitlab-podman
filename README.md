@@ -49,7 +49,7 @@ set base image to: docker
 ## Note
 1. Gitlab-server
 - Using SSH repo with root user
-Set this config on ~/.ssh/config 
+Set this config on `~/.ssh/config` 
 ```
 Host localhost
   HostName localhost
@@ -58,14 +58,13 @@ Host localhost
   IdentityFile ~/.ssh/gitlab_rsa
 ```
 2. Gitlab-runner
-- Remember to set this parameter which help your runner resolve your local gitlab server
+- Remember to set this parameter which help your runner resolve your local gitlab server. Check example file `config.toml.template`
 ```yaml
 ...
 [runners.docker]
     ...
     network_mode = "host"
 ```
-Check example in config.toml.template
 3. Podman
 When running podman on ubuntu Jammy, you may encouter container error with crun. Remove current crun with apt then install latest version on https://github.com/containers/crun
 ## TODO
